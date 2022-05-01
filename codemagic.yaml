@@ -26,7 +26,6 @@ workflows:
       - flutter emulators --launch apple_ios_simulator
       - flutter packages pub get
       - flutter analyze
-      - flutter drive --target=test_driver/main.dart
       - flutter test
     artifacts:
       - '*.snap'
